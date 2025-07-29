@@ -3,8 +3,9 @@ def check_list
 
     print("What's you're name? ")
 
-    user_string = gets.chomp
+    user_string = gets.chomp.capitalize
 
+    return :exit if user_string.downcase == "exit"
 
     if vip_names.include?(user_string)
         puts("Hey #{user_string} you're on the list")
@@ -14,5 +15,6 @@ def check_list
 end
 
 while true
+    break if check_list ==:exit
     check_list()
 end

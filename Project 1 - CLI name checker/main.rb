@@ -2,7 +2,7 @@ vip_names = ["Eoghan", "John", "Mary", "Mike"]
 
 print("What's you're name? ")
 
-user_string = gets.chomp.
+user_string = gets.chomp
 
 
  if vip_names.include?(user_string)

@@ -1,12 +1,18 @@
-vip_names = ["Eoghan", "John", "Mary", "Mike"]
+def check_list
+    vip_names = ["Eoghan", "John", "Mary", "Mike"]
 
-print("What's you're name? ")
+    print("What's you're name? ")
 
-user_string = gets.chomp
+    user_string = gets.chomp
 
 
- if vip_names.include?(user_string)
-    puts("Hey #{user_string} you're on the list")
-else
-    puts("You're not on the list #{user_string}")
+    if vip_names.include?(user_string)
+        puts("Hey #{user_string} you're on the list")
+    else
+        puts("You're not on the list #{user_string}")
+    end
+end
+
+while true
+    check_list()
 end
